@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
@@ -27,7 +28,12 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        horizontalInput = Input.GetAxisRaw("Horizontal");
+        var kb = Keyboard.current;
+        if (kb == null) return;
+
+        horizontalInput = 0f;
+        if (kb.aKey.isPressed || kb.leftArrowKey.isPressed) horizontalInput -= 1f;
+        if (kb.dKey.isPressed || kb.rightArrowKey.isPressed) horizontalInput += 1f;
 
         if (groundCheck != null)
         {
@@ -35,7 +41,7 @@ public class PlayerController : MonoBehaviour
                 groundCheck.position, groundCheckRadius, groundLayer) != null;
         }
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (kb.spaceKey.wasPressedThisFrame && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
