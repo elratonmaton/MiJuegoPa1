@@ -1634,7 +1634,7 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier:
   scoreValue: 1
---- !u!59 &102004
+--- !u!58 &102004
 CircleCollider2D:
   serializedVersion: 2
   m_ObjectHideFlags: 0
@@ -1767,7 +1767,7 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier:
   scoreValue: 1
---- !u!59 &102104
+--- !u!58 &102104
 CircleCollider2D:
   serializedVersion: 2
   m_ObjectHideFlags: 0
@@ -1900,7 +1900,7 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier:
   scoreValue: 1
---- !u!59 &102204
+--- !u!58 &102204
 CircleCollider2D:
   serializedVersion: 2
   m_ObjectHideFlags: 0
