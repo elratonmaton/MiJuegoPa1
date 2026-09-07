@@ -24,12 +24,17 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        Debug.Log($"[PlayerController] Awake en {name}. rb={rb != null} sr={sr != null}");
     }
 
     private void Update()
     {
         var kb = Keyboard.current;
-        if (kb == null) return;
+        if (kb == null)
+        {
+            Debug.LogWarning("[PlayerController] Keyboard.current es null");
+            return;
+        }
 
         horizontalInput = 0f;
         if (kb.aKey.isPressed || kb.leftArrowKey.isPressed) horizontalInput -= 1f;
