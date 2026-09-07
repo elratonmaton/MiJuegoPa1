@@ -6,6 +6,7 @@ public class Coin : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log($"[Coin] Trigger con '{other?.name ?? "null"}' tag={other?.tag ?? "null"}");
         if (other == null) return;
         if (!other.CompareTag("Player")) return;
 
