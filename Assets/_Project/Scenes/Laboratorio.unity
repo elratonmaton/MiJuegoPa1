@@ -1636,6 +1636,7 @@ MonoBehaviour:
   scoreValue: 1
 --- !u!59 &102004
 CircleCollider2D:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1768,6 +1769,7 @@ MonoBehaviour:
   scoreValue: 1
 --- !u!59 &102104
 CircleCollider2D:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1900,6 +1902,7 @@ MonoBehaviour:
   scoreValue: 1
 --- !u!59 &102204
 CircleCollider2D:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
