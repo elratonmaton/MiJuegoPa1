@@ -1239,7 +1239,8 @@ SpriteRenderer:
   m_AtlasScale: 1
   m_EnableInstancing: 1
   m_Material: {fileID: 0}
-  m_MaterialDirty: 0--- !u!1 &101000
+  m_MaterialDirty: 0
+--- !u!1 &101000
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1633,7 +1634,7 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier:
   scoreValue: 1
---- !u!60 &102004
+--- !u!59 &102004
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1765,7 +1766,7 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier:
   scoreValue: 1
---- !u!60 &102104
+--- !u!59 &102104
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1897,7 +1898,7 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier:
   scoreValue: 1
---- !u!60 &102204
+--- !u!59 &102204
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
